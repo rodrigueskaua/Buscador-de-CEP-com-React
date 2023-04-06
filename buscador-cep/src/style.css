@@ -1,0 +1,105 @@
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+}
+
+.title{
+  font-size: 90px;
+  font-weight: 1000;
+  color: white;
+  animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+
+  }
+}
+
+.containerInput{
+  width: 450px;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 15px 1.5rem;
+  margin: 34px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0,0,0 0.5);
+}
+
+.containerInput input{
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  color: white;
+  outline: none;
+  margin-right: 5px;
+}
+
+.containerInput input::placeholder{
+  color: hsla(0, 29%, 95%, 0.651);
+}
+
+.searchBtn{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: aliceblue;
+}
+
+.searchBtn:hover{
+  transform: scale(1.1);
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  padding: 1.5rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+  border-radius: 8px;
+}
+
+.main h2{
+ margin: 15px 0px; 
+}
+
+
+.main span{
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 20px;
+ }
+
+@media (max-width: 620px){
+  .title{
+    font-size: 60px;
+  }
+
+  .main{
+    width: 80%;
+    min-height: 250px;
+    }
+  
+  .main h2{
+  font-size: 28px;
+
+  }
+  
+
+}
